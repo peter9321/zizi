@@ -1,6 +1,6 @@
 {
-    "name" : "dianshang",
-    "appid" : "__UNI__CA1DC2D",
+    "name" : "zizizi",
+    "appid" : "",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -43,13 +43,7 @@
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {
-                "ad" : {}
-            },
-            "splashscreen" : {
-                "iosStyle" : "default",
-                "androidStyle" : "default"
-            }
+            "sdkConfigs" : {}
         }
     },
     /* 快应用特有相关 */

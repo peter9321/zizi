@@ -17,35 +17,118 @@
 				</view>
 			</view>
 		 </view>
-		<!-- ../../static/images/n1.png -->
 		 <view class="video-box">
 			 <video id="myVideo" class="video-item" src="../../static/video.mp4" 
 			                      show-fullscreen-btn poster="../../static/images/n1.png" controls></video>
 		 </view>
 		 <view class="notice-box">
-		 	<u-notice-bar class="nb" icon="" mode="horizontal" :list="list" color="#ffffff" bgColor="none"></u-notice-bar>
+			<u-notice-bar :text="text1"  color="#ffffff" bgColor="none"></u-notice-bar>
+		 	<!-- <u-notice-bar class="nb" icon="" mode="horizontal" :text="text1" color="#ffffff" bgColor="none"></u-notice-bar> -->
 		 	<!-- <u-notice-bar mode="horizontal" :list="list" bg-color="#FDF7FF"></u-notice-bar> -->
 		 </view>
-		 
-		 <!-- 轮播图 -->
-		<view class="uni-padding-wrap">
-			<view class="page-section swiper">
-				<view class="page-section-spacing">
-					<swiper class="swiper" :autoplay="true" acceleration="true" indicator-dots="true" indicator-color="#B8B8B8" indicator-active-color="#ffffff">
-						<swiper-item >
-							<view class="swiper-item uni-bg-red"><image   style="width: 100%; height: 280rpx"  src="../../static/imgs/index/swiper/banner1.png" mode=""></image></view>
-						</swiper-item>
-						<swiper-item >
-							<view class="swiper-item uni-bg-green"><image  style="width: 100%; height: 280rpx"  src="../../static/imgs/index/swiper/banner2.png" mode=""></image></view>
-						</swiper-item>
-						<swiper-item >
-							<view class="swiper-item uni-bg-green"><image  style="width: 100%; height: 280rpx"  src="../../static/imgs/index/swiper/banner3.png" mode=""></image></view>
-						</swiper-item>
-						
-					</swiper>
+		<!-- 四个按钮 -->
+		 <view class="function-btns">
+		 	<view class="btn">
+		 		<img src="../../static/images/jieshao.png" alt="">
+				<view class="text">
+					公司介绍
+				</view>
+		 	</view>
+			<view class="btn">
+				<img src="../../static/images/xuzhi.png" alt="">
+				<view class="text">
+					用户须知
 				</view>
 			</view>
-		</view>
+			<view class="btn">
+				<img src="../../static/images/qiandao.png" alt="">
+				<view class="text">
+					每日签到
+				</view>
+			</view>
+			<view class="btn">
+				<img src="../../static/images/yaoqing.png" alt="">
+				<view class="text">
+					邀请好友
+				</view>
+			</view>
+		 </view>
+		 <view class="project-area">
+			<view class="top-btn">
+				<view class="btn">
+					<img src="../../static/images/grtz.png" alt="">
+					个人投资图
+				</view>
+				<view class="btn">
+					<img src="../../static/images/recommend.png" alt="">
+					推荐返佣图
+				</view>
+			</view>
+			<!-- 轮播图 -->
+			<view class="uni-padding-wrap">
+				<view class="page-section swiper">
+					<view class="page-section-spacing">
+						<swiper class="swiper"  :autoplay="false" acceleration="true" indicator-dots="true" indicator-color="#B8B8B8" indicator-active-color="#ffffff">
+							<swiper-item >
+								<view class="swiper-item ">
+									<view class="top-area">
+										<view class="left">
+											<view class="hot">
+												<img src="../../static/images/hot.png" alt="">
+												推荐项目
+											</view>
+											<view class="name">
+												中航储能股权四期体验号
+											</view>
+										</view>
+										<view class="right">
+											<view class="text">
+												2.99%
+											</view>
+										</view>
+										
+									</view>
+								</view>
+							</swiper-item>
+							<swiper-item >
+								<view class="swiper-item ">
+									<view class="">2</view>
+								</view>
+							</swiper-item>
+							<swiper-item >
+								<view class="swiper-item ">
+									<view class="">3</view>
+								</view>
+							</swiper-item>
+							
+						</swiper>
+					</view>
+				</view>
+			</view>
+			<!-- 上市进度 -->
+			<view class="Listing-progress">
+				<view class="title-box">
+					<view class="left">
+						
+					</view>
+					<view class="">
+						上市进度
+					</view>
+				</view>
+				<view class="main">
+					<view class="name">
+						<view class="left">
+							
+						</view>
+						<view class="">
+							中创新航技术股份有限公司
+						</view>
+					</view>
+					<img src="../../static/images/zhonghang.jpg" alt="">
+				</view>
+			</view>
+		 </view>
+		
 		
 		<!-- 消息提醒区 -->
 		
@@ -56,11 +139,10 @@
 </template>
 
 <script>
-import maoScroll from '../../components/mao-scroll/mao-scroll.vue';
-import HomeApi from '../../api/HomeApi.js'
+
 export default {
 	components:{
-		maoScroll
+		
 	},
 	data() {
 		return {
@@ -71,10 +153,7 @@ export default {
 			animationScroll: 600,
 			animation: 2000,
 			moneyList:[],
-			list:[
-				'你好',
-				'北京欢迎你'
-			],
+			text1:"123",
 			platformList:[],
 			current: {
 				poster: 'https://bjetxgzv.cdn.bspapp.com/VKCEYUGU-uni-app-doc/7fbf26a0-4f4a-11eb-b680-7980c8a877b8.png',
@@ -89,7 +168,6 @@ export default {
 	},
 	onLoad() {
 		   
-			
 		},
 	methods: {
 		jumpTast(item){
@@ -150,7 +228,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- @import '../../static/iconfont/css/icon.css';
+
 .main-page{
 	background: linear-gradient(to right,#ff0000,#ff9933);
 	.header{
@@ -191,6 +269,134 @@ export default {
 		.video-item{
 			width: 100%;
 			height:100%;
+		}
+	}
+	.function-btns{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 10px;
+		color: #fff;
+		font-size: 12px;
+		.btn{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.icon-qianbao2{
+			font-size: 26px;
+			margin-bottom:10px;
+		}
+	}
+	.project-area{
+		background-color: #fff;
+		margin: 5px;
+		padding-top: 10px;
+		padding-bottom: 100px;
+		border-radius: 5px;	
+		.top-btn{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			.btn{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				width: 150px;
+				height: 65px;
+				border-radius: 5px;
+				background: rgba(231, 56, 69, 0.05);
+				color: #E73845;
+				img{
+					margin-right:5px;
+				}
+			}
+		}
+		.uni-padding-wrap{
+			// width: 100%;
+			margin: 20px 5px;
+			.swiper{
+				height: 250px;
+				.swiper-item{
+					.top-area{
+						border-radius: 10px 10px 0 0;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						height: 80px;
+						border-bottom: 1px solid #e7e7e7;
+						background: blue;
+						background: linear-gradient(
+						180deg, rgba(231, 56, 69, 0.2) 0%, rgba(231, 56, 69, 0.2) 0.01%, rgba(231, 56, 69, 0.02) 21.88%);
+						.left{
+							.hot{
+								color: #E73845;
+								display: flex;
+								flex-direction: row;
+								font-size: 12px;
+								font-weight: 400;
+								margin: 15px 0 10px 15px;
+								img{
+									margin-right: 6px;
+								}
+							}
+							.name{
+								margin-left: 8px;
+							}
+						}
+						.right{
+							color: #f20;
+							display: flex;
+							align-items: flex-end;
+							justify-content: center;
+							width: 100px;
+							height: 100%;
+							.text{
+								margin-bottom: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.Listing-progress{
+			.title-box{
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				padding: 10px 15px;
+				margin-top: 5px;
+				border-top: 2px solid #287593;
+				border-bottom: 2px solid #287593;
+				.left{
+					height: 15px;
+					width: 4px;
+					background: #fd480f;
+					margin-right: 10px;
+				}
+			}
+			.main{
+				margin: 20px;
+				box-shadow:0px 5px 5px 0px gray;
+				.name{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					font-size: 18px;
+					padding:15px 0;
+					.left{
+						margin:0 20px;
+						width: 1px;
+						height: 30px;
+						background: red;
+					}
+				}
+				img{
+					margin-top: 10px;
+					width: 100%;
+				}
+			}
 		}
 	}
 }
