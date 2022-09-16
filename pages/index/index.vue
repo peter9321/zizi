@@ -8,11 +8,11 @@
 		 	</view>
 			
 			<view class="login-area">
-				<view class="login">
+				<view class="login" @click="goPage('/pages/login/login')">
 					登录
 				</view>
 				/
-				<view class="register">
+				<view class="register" @click="goPage('/pages/register/register')">
 					注册
 				</view>
 			</view>
@@ -28,19 +28,19 @@
 		 </view>
 		<!-- 四个按钮 -->
 		 <view class="function-btns">
-		 	<view class="btn">
+		 	<view class="btn" @click="goPage('/pages/companyProfile/companyProfile')">
 		 		<img src="../../static/images/jieshao.png" alt="">
 				<view class="text">
 					公司介绍
 				</view>
 		 	</view>
-			<view class="btn">
+			<view class="btn" @click="goPage('/pages/userKnow/userKnow')">
 				<img src="../../static/images/xuzhi.png" alt="">
 				<view class="text">
 					用户须知
 				</view>
 			</view>
-			<view class="btn">
+			<view class="btn" @click="show = true">
 				<img src="../../static/images/qiandao.png" alt="">
 				<view class="text">
 					每日签到
@@ -130,7 +130,7 @@
 		 </view>
 		
 		
-		<!-- 消息提醒区 -->
+		<u-modal :show="show" title="提示" @confirm="show = false" :content='content'></u-modal>
 		
 		
 	
@@ -163,13 +163,21 @@ export default {
 			},
 			audioAction: {
 				method: 'pause'
-			}
+			},
+			show:false,
+			content:'签到成功'
 		}
 	},
 	onLoad() {
 		   
 		},
 	methods: {
+		goPage(url){
+			console.log(666)
+			uni.navigateTo({
+				url: url
+			});
+		},
 		jumpTast(item){
 			let id = item.id
 			let platformName=item.platformName

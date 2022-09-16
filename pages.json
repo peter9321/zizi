@@ -1,7 +1,5 @@
 {	
-	"easycom": {
-		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
-	},
+	
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -28,46 +26,88 @@
 		{
 			"path": "pages/server/server",
 			"style": {
-				// "navigationBarTitleText": "uni-app",
-				"navigationStyle": "custom"
+				"navigationBarTitleText": "客服",
+				"navigationBarBackgroundColor": "#28759382",
+				"navigationBarTextStyle": "#ffffff"
+				// "navigationStyle": "custom"
 			}
 		}
-	],
+	    ,{
+            "path" : "pages/companyProfile/companyProfile",
+            "style" :{
+                "navigationBarTitleText": "公司介绍",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
+        ,{
+            "path" : "pages/userKnow/userKnow",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "用户须知",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :{
+                "navigationBarTitleText": "登录",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style" :{
+                "navigationBarTitleText": "注册",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
+    ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "#ffffff",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar": {
-	        "borderStyle": "black",
-	    //  "backgroundColor": "#333",
-	        "color": "#8F8F94",
-	        "selectedColor": "#f33e54",
-	        "list": [{
-	                "pagePath": "pages/index/index",
-	                "iconPath": "static/images/index.png",
-	                "selectedIconPath": "static/images/index_s.png",
-	                "text": "首页"
-	            },
-	            {
-	                "pagePath": "pages/order/order",
-	                "iconPath": "static/images/tz_s.png",
-	                "selectedIconPath": "static/images/tz_s.png",
-	                "text": "我要投资"
-	            },
-	            {
-	                "pagePath": "pages/server/server",
-	                "iconPath": "static/images/kf.png",
-	                "selectedIconPath": "static/images/kf.png",
-	                "text": "客服"
-	            },
-	            {
-	                "pagePath": "pages/memberCenter/memberCenter",
-	                "iconPath": "static/images/m.png",
-	                "selectedIconPath": "static/images/m_s.png",
-	                "text": "我的"
-	            }
-	        ]
-	    }
+		"borderStyle": "black",
+	//  "backgroundColor": "#333",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/index.png",
+				"selectedIconPath": "static/images/index_s.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/order/order",
+				"iconPath": "static/images/tz.png",
+				"selectedIconPath": "static/images/tz_s.png",
+				"text": "我要投资"
+			},
+			{
+				"pagePath": "pages/server/server",
+				"iconPath": "static/images/kf.png",
+				"selectedIconPath": "static/images/kf.png",
+				"text": "客服"
+			},
+			{
+				"pagePath": "pages/memberCenter/memberCenter",
+				"iconPath": "static/images/m.png",
+				"selectedIconPath": "static/images/m_s.png",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	}
 }

@@ -4,6 +4,8 @@ import App from './App'
 import Vue from 'vue'
 Vue.config.productionTip = false
 App.mpType = 'app'
+
+
 import uView from "uview-ui";
 Vue.use(uView);
 
