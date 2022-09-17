@@ -9,7 +9,6 @@
 			}
 		},
 		{	
-			
 			"path": "pages/memberCenter/memberCenter",
 			"style": {
 				// "navigationBarTitleText": "uni-app",
