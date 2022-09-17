@@ -117,6 +117,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/letter/letter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "站内信",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "#ffffff",
