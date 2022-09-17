@@ -1,18 +1,15 @@
 <template>
-	<view class="invest-record">
+	<view class="gain-record">
 		<view class="table">
 			<view class="top-line">
 				<view class="left">
-					投资产品
+					说明
 				</view>
 				<view class="mid">
-					投资状态
-				</view>
-				<view class="mid">
-					投资时间
+					金额
 				</view>
 				<view class="right">
-					协议
+					时间
 				</view>
 			</view>
 			<view class="line">
@@ -22,11 +19,19 @@
 				<view class="mid">
 					+1
 				</view>
+				<view class="right">
+					09-17 01:51
+				</view>
+			</view>
+			<view class="line">
+				<view class="left">
+					签到1元
+				</view>
 				<view class="mid">
 					+1
 				</view>
 				<view class="right">
-					阅读
+					09-17 01:51
 				</view>
 			</view>
 
@@ -60,16 +65,16 @@
 			justify-content: center;
 			align-items: center;
 		}
-		.left{
-			width: 374rpx;
+		.left,.right{
+			width: 240rpx;
 		}
 		.mid{
-			width: 140rpx;
-			// border-left: none;
-			// border-right: none;
+			width: 150rpx;
+			border-left: none;
+			border-right: none;
 		}
 		.right{
-			width: 93rpx;
+			width: 356rpx;
 		}
 	}
 	.top-line{
@@ -78,6 +83,8 @@
 	.line{
 		margin-top: -2rpx;
 		.mid{
+			border-left: none;
+			border-right: none;
 			color: #38c172;
 		}
 		.right{

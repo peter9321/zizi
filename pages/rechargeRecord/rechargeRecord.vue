@@ -3,16 +3,16 @@
 		<view class="table">
 			<view class="top-line">
 				<view class="left">
-					投资产品
+					订单号
 				</view>
 				<view class="mid">
-					投资状态
+					充值金额
 				</view>
 				<view class="mid">
-					投资时间
+					充值方式
 				</view>
 				<view class="right">
-					协议
+					订单状态
 				</view>
 			</view>
 			<view class="line">
@@ -26,10 +26,9 @@
 					+1
 				</view>
 				<view class="right">
-					阅读
+					09-17 01:51
 				</view>
 			</view>
-
 		</view>
 	</view>
 </template>
@@ -55,21 +54,21 @@
 		display: flex;
 		.left,.mid,.right{
 			border: 1px solid #ebebeb;
+			// border-right: none;
+			margin-left: -2rpx;
 			height: 70rpx;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 		}
 		.left{
-			width: 374rpx;
+			width: 157rpx;
 		}
 		.mid{
-			width: 140rpx;
-			// border-left: none;
-			// border-right: none;
+			width: 197rpx;
 		}
 		.right{
-			width: 93rpx;
+			width: 197rpx;
 		}
 	}
 	.top-line{

@@ -83,24 +83,24 @@
 				<image mode="aspectFit" class="logo" src="../../static/images/member/index-hlf-icon6.png" ></image>
 				<text>站内短信</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/gainRecord/gainRecord')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/accTotal.png" ></image>
 				<text>收益记录</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/investRecord/investRecord')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/icon-in4.png" ></image>
 				<text>投资记录</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/fundState/fundState')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/accBank.png" ></image>
 				<text>资金流水</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/rechargeRecord/rechargeRecord')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/accBusiness.png" ></image>
 				<text>充值记录</text>
 			</view>
 			
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/withdrawRecord/withdrawRecord')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/redom.png" ></image>
 				<text>提现记录</text>
 			</view>

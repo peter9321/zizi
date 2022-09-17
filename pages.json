@@ -127,7 +127,7 @@
 			}
 		},
 		{
-            "path" : "pages/gainRecored/gainRecored",
+            "path" : "pages/gainRecord/gainRecord",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "收益记录",
@@ -137,7 +137,7 @@
             
         }
         ,{
-            "path" : "pages/InvestRecord/InvestRecord",
+            "path" : "pages/investRecord/investRecord",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "投资记录",
@@ -156,7 +156,7 @@
             
         },
 		{
-		    "path" : "pages/rechargeRecored/rechargeRecored",
+		    "path" : "pages/rechargeRecord/rechargeRecord",
 		    "style" :                                                                                    
 		    {
 		        "navigationBarTitleText": "充值记录",
