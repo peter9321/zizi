@@ -86,7 +86,50 @@
 												2.99%
 											</view>
 										</view>
-										
+									</view>
+									<view class="main-mes">
+										<view class="mes-item">
+											<text class="tit">7 <text class="ltit">天</text></text>
+											<text class="stit">投资期限</text>
+										</view>
+										<view class="mes-item">
+											<text class="tit">7777</text>
+											<text class="stit">每日收益（元）</text>
+										</view>
+										<view class="mes-item">
+											<text class="tit">777</text>
+											<text class="stit">起购金额（元）</text>
+										</view>
+									</view>
+									<view class="desc-box">
+										<view class="left">
+											<view class="line">
+												<text class="tit">预期收益率：
+												  <text class="stit" style="color: red;">21.1%</text>
+												</text>
+											</view>
+											<view class="line">
+												<text class="tit">项目规模：
+												  <text class="stit" style="color: black;">10000000万元</text>
+												</text>
+											</view>
+											<view class="line">
+												<text class="tit">按天付收益，：
+												  <text class="stit">到期还本</text>
+												</text>
+											</view>
+										</view>
+										<view class="right">
+											<view class="btn">
+												立即投资
+											</view>
+										</view>
+									</view>
+									<view class="jin">
+										<view class="jindu">
+											<u-line-progress :percentage="30" activeColor="#ff0000"></u-line-progress>
+										</view>
+										<text style="color: #666;font-size: 14px;">进度5.3%</text>
 									</view>
 								</view>
 							</swiper-item>
@@ -363,6 +406,77 @@ export default {
 							.text{
 								margin-bottom: 5px;
 							}
+						}
+					}
+					.main-mes{
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 20rpx 20rpx;
+						.mes-item{
+							
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							.tit{
+								color: #f20;
+								font-size: 5vw;
+								.ltit{
+									font-size: 3vw;
+									color: black;
+								}
+							}
+							.stit{
+								font-size: 3vw;
+								color: black;
+								margin-top: 10rpx;
+							}
+						}
+					}
+					.desc-box{
+						display: flex;
+						padding: 0rpx 20rpx;
+						.left{
+							flex: 1;
+							display: flex;
+							flex-direction: column;
+							.line{
+								display: flex;
+								margin-bottom: 10rpx;
+								text{
+									font-size: 28rpx;
+									color: #969696;
+								}
+							}
+						}
+						.right{
+							width: 180rpx;
+							height: 60rpx;
+							background: #E73845;
+							border-radius: 4px;
+							line-height: 60rpx;
+							text-align: center;
+							color: #ffffff;
+							font-size: 28rpx;
+							margin-top: 10rpx;
+						}
+					}
+					.jin{
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 0 20rpx;
+						margin-top: 10rpx;
+						text{
+							color: #05a5cb;
+							font-size: 24rpx;
+						}
+						.jindu{
+							width: 420rpx;
+							display: flex;
+							align-items: center;
+							// margin:0 20rpx
 						}
 					}
 				}

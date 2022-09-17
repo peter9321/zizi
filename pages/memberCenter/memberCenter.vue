@@ -40,7 +40,7 @@
 			</view>
 		</view>
 		<view class="main-menu">
-			<view class="menu-item">
+			<view class="menu-item" @click="goPage('/pages/recharge/recharge')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/cz.png" ></image>
 				<text>充值</text>
 			</view>
@@ -119,7 +119,12 @@
 			}
 		},
 		methods: {
-			
+			goPage(url){
+				console.log(666)
+				uni.navigateTo({
+					url: url
+				});
+			},
 		}
 	}
 </script>

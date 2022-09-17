@@ -68,6 +68,15 @@
                 "navigationBarTextStyle": "#ffffff"
             }
             
+        },{
+            "path" : "pages/recharge/recharge",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "充值",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
         }
     ],
 	"globalStyle": {
