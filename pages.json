@@ -175,6 +175,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/inviteFriends/inviteFriends",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "邀请好友",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "#ffffff",

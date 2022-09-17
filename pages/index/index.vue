@@ -46,7 +46,7 @@
 					每日签到
 				</view>
 			</view>
-			<view class="btn">
+			<view class="btn" @click="goPage('/pages/inviteFriends/inviteFriends')">
 				<img src="../../static/images/yaoqing.png" alt="">
 				<view class="text">
 					邀请好友

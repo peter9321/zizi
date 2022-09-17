@@ -75,7 +75,7 @@
 				<text>实名认证</text>
 			</view>
 			
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/inviteFriends/inviteFriends')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/icon-in7.png" ></image>
 				<text>邀请好友</text>
 			</view>
