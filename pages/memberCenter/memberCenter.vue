@@ -48,7 +48,7 @@
 				<image mode="aspectFit" class="logo" src="../../static/images/member/trans.png" ></image>
 				<text>转账</text>
 			</view>
-			<view class="menu-item">
+			<view class="menu-item" @click="goPage('/pages/withdraw/withdraw')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/tx.png" ></image>
 				<text>提现</text>
 			</view>

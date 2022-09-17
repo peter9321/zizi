@@ -108,6 +108,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/withdraw/withdraw",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提现",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "#ffffff",
