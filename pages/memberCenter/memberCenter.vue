@@ -44,7 +44,7 @@
 				<image mode="aspectFit" class="logo" src="../../static/images/member/cz.png" ></image>
 				<text>充值</text>
 			</view>
-			<view class="menu-item">
+			<view class="menu-item" @click="goPage('/pages/transfer/transfer')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/trans.png" ></image>
 				<text>转账</text>
 			</view>

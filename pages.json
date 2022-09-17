@@ -88,6 +88,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/transfer/transfer",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "转账",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "#ffffff",
