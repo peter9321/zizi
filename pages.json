@@ -97,6 +97,16 @@
                 "navigationBarTextStyle": "#ffffff"
             }
             
+        },
+		{
+            "path" : "pages/toInvest/toInvest",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "立即投标",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
         }
     ],
 	"globalStyle": {

@@ -34,7 +34,63 @@
 		</view>
 		<view class="xian"></view>
 		<view class="tab-box">
-			
+			<view class="tab-head">
+				<view class="head-item" @click="tabClick(item,index)" :class="[tabIndex==index?'active':'']" v-for="(item,index) in tabList" :key="index">
+					{{ item.name }}
+				</view>
+			</view>
+			<view class="tab-content">
+				<view class="tab1" v-if="tabIndex == 0">
+					<view class="table">
+						<view class="table-line">
+							<view class="table-l">
+								项目名称
+							</view>
+							<view class="table-r">
+								中航储能股权融资冲刺号
+							</view>
+						</view>
+						<view class="table-line">
+							<view class="table-l">
+								项目金额
+							</view>
+							<view class="table-r">
+								<text style="color: red;">1000000万</text>
+								 人民币
+							</view>
+						</view>
+						<view class="table-line">
+							<view class="table-l">
+								每天分红
+							</view>
+							<view class="table-r">
+								<text style="color: red;">按每日2.11%的收益（保本保息）</text>
+							</view>
+						</view>
+						<view class="table-line">
+							<view class="table-l">
+								投资金额
+							</view>
+							<view class="table-r">
+								<text style="color: red;">最低起投399元</text>
+								（限买1000000份）
+							</view>
+						</view>
+						<view class="table-line">
+							<view class="table-l">
+								项目期限
+							</view>
+							<view class="table-r">
+								<text style="color: red;">7个</text>
+								自然日
+							</view>
+						</view>
+					</view>
+				</view>
+				<view class="tab2" v-if="tabIndex == 1">
+					项目说明
+				</view>
+			</view>
 		</view>
 		<view class="bottom-box">
 			<view class="btn">
@@ -48,18 +104,26 @@
 	export default {
 		data() {
 			return {
-				
+				tabList: [{
+					name: '投资详情',
+				}, {
+					name: '项目说明',
+				}],
+				tabIndex:0
 			}
 		},
 		methods: {
-			
+			tabClick(item,index) {
+				console.log('item', item);
+				this.tabIndex = index
+			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
 .detail{
-	padding-bottom: 100rpx;
+	padding-bottom: 120rpx;
 	.top-tit{
 		padding: 20rpx 20rpx;
 		font-size: 28rpx;
@@ -112,6 +176,64 @@
 	.xian{
 		margin-top: 30rpx;
 		border-top: 1px solid #ddd;
+	}
+	.tab-box{
+		margin-top: 20rpx;
+		.tab-head{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			border-bottom: 1px solid #ddd;
+			height: 100rpx;
+			.head-item{
+				width: 50%;
+				height: 100rpx;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				line-height: 100rpx;
+				
+				
+			}
+			.active{
+				border-bottom: 2px solid #385fec;
+				color: #385fec;
+			}
+		}
+		.tab-content{
+			padding: 0 40rpx ;
+			.tab1{
+				margin-top: 40rpx;
+				.table{
+					border: 1px solid black;
+					border-bottom: none;
+					.table-line{
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						.table-l{
+					      width: 200rpx;	
+						  padding:16rpx 10rpx;
+						  border-right: 1px solid black;
+						  border-bottom: 1px solid black;
+						  font-size: 12px;
+						  color: #666;
+						}
+						.table-r{
+						  flex: 1;
+						  padding:16rpx 10rpx;
+						  border-bottom: 1px solid black;
+						  font-size: 12px;
+						  color: #666;
+						}
+					}
+				}
+			}
+			.tab2{
+				margin-top: 40rpx;
+			}
+		}
 	}
 	.bottom-box{
 		position: fixed;
