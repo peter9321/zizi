@@ -205,6 +205,36 @@
             }
             
         }
+        ,{
+            "path" : "pages/accountSet/accountSet",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "账号设置",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
+        ,{
+            "path" : "pages/setLoginPwd/setLoginPwd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设置登录密码",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
+        ,{
+            "path" : "pages/setPayPwd/setPayPwd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "设置支付密码",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "#ffffff",

@@ -3,21 +3,19 @@
 		<!-- 注意，如果需要兼容微信小程序，最好通过setRules方法设置rules规则 -->
 		<u--form class="main-form" labelPosition="left"  ref="form1">
 			
-			<u-form-item labelWidth="70" label="姓名" prop="username" borderBottom ref="item1">
-				<u--input v-model="sendform.username" placeholder="请输入开户人姓名" border="none"></u--input>
+			<u-form-item labelWidth="80" label="原登录密码" prop="username" borderBottom ref="item1">
+				<u--input v-model="sendform.username" placeholder="请输入登录密码" border="none"></u--input>
 			</u-form-item>
-            <u-form-item labelWidth="70" label="所属银行" prop="username" borderBottom ref="item1">
-            	<u--input v-model="sendform.pwd" placeholder="请输入所属银行,如中国工商银行" border="none"></u--input>
+            <u-form-item labelWidth="80" label="新登录密码" prop="username" borderBottom ref="item1">
+            	<u--input v-model="sendform.pwd" placeholder="请输入新登录密码" border="none"></u--input>
             </u-form-item>
-			<u-form-item labelWidth="70" label="开户行" prop="username" borderBottom ref="item1">
-				<u--input v-model="sendform.pwd" placeholder="请输入开户银行,如北京海定区支行" border="none"></u--input>
-			</u-form-item>
-			<u-form-item labelWidth="70" label="卡号" prop="username" borderBottom ref="item1">
-				<u--input v-model="sendform.pwd" placeholder="请输入储蓄卡号" border="none"></u--input>
+			<u-form-item labelWidth="80" label="确认密码" prop="username" borderBottom ref="item1">
+				<u--input v-model="sendform.pwd" placeholder="请输入确认密码" border="none"></u--input>
 			</u-form-item>
 			
+			
 			<view class="btn">
-                立即添加
+                完成修改
 			</view>
 		</u--form>
 		

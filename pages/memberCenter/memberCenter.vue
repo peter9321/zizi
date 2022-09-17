@@ -62,7 +62,7 @@
 				<image mode="aspectFit" class="logo" src="../../static/images/member/juan.png" ></image>
 				<text>优惠券</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/accountSet/accountSet')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/accSet.png" ></image>
 				<text>账号设置</text>
 			</view>
