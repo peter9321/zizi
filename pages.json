@@ -144,8 +144,8 @@
 			},
 			{
 				"pagePath": "pages/server/server",
-				"iconPath": "static/images/kf.png",
-				"selectedIconPath": "static/images/kf.png",
+				"iconPath": "static/images/kefu.png",
+				"selectedIconPath": "static/images/kefu_act.png",
 				"text": "客服"
 			},
 			{

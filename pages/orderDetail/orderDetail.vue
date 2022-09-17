@@ -93,7 +93,7 @@
 			</view>
 		</view>
 		<view class="bottom-box">
-			<view class="btn">
+			<view class="btn" @click="goPage('/pages/toInvest/toInvest')">
 				马上投资
 			</view>
 		</view>
@@ -116,7 +116,13 @@
 			tabClick(item,index) {
 				console.log('item', item);
 				this.tabIndex = index
-			}
+			},
+			goPage(url){
+				console.log(666)
+				uni.navigateTo({
+					url: url
+				});
+			},
 		}
 	}
 </script>
