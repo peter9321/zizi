@@ -78,6 +78,16 @@
             }
             
         }
+        ,{
+            "path" : "pages/orderDetail/orderDetail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "投资详情",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "#ffffff",

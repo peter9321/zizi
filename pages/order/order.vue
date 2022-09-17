@@ -61,7 +61,7 @@
 								</view>
 							</view>
 							<view class="right">
-								<view class="btn">
+								<view class="btn" @click="goPage('/pages/orderDetail/orderDetail')">
 									立即投资
 								</view>
 							</view>
@@ -366,7 +366,13 @@
 		methods: {
 			changeTab(item,index){
 				this.tabIndex = index
-			}
+			},
+			goPage(url){
+				console.log(666)
+				uni.navigateTo({
+					url: url
+				});
+			},
 		}
 	}
 </script>
