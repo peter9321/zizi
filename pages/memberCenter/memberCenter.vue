@@ -54,11 +54,11 @@
 			</view>
 		</view>
 		<view class="nav-list">
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/equity/equity')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/ebao.png" ></image>
 				<text>股权</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/coupon/coupon')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/juan.png" ></image>
 				<text>优惠券</text>
 			</view>

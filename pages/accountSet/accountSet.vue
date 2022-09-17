@@ -14,7 +14,7 @@
 				<image mode="aspectFit" class="icon" src="../../static/images/user_cert1.png" ></image>
 				<text>实名认证</text>
 			</view>
-			<view class="right">
+			<view class="right" @click="goPage('/pages/verifiedUser/verifiedUser')">
 				未认证
 			</view>
 		</view>

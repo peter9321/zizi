@@ -235,6 +235,26 @@
             }
             
         }
+        ,{
+            "path" : "pages/coupon/coupon",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的优惠券",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/equity/equity",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "投资股权",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "white"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
