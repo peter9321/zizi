@@ -66,11 +66,11 @@
 				<image mode="aspectFit" class="logo" src="../../static/images/member/accSet.png" ></image>
 				<text>账号设置</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/bandCard/bandCard')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/icon-in-001.png" ></image>
 				<text>银行卡绑定</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/verifiedUser/verifiedUser')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/userrealname.png" ></image>
 				<text>实名认证</text>
 			</view>

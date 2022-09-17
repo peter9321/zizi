@@ -185,6 +185,26 @@
             }
             
         }
+        ,{
+            "path" : "pages/verifiedUser/verifiedUser",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "实名认证",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
+        ,{
+            "path" : "pages/bandCard/bandCard",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "绑定银行卡",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "#ffffff",
