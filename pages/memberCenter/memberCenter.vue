@@ -79,7 +79,7 @@
 				<image mode="aspectFit" class="logo" src="../../static/images/member/icon-in7.png" ></image>
 				<text>邀请好友</text>
 			</view>
-			<view class="nav-item">
+			<view class="nav-item" @click="goPage('/pages/letter/letter')">
 				<image mode="aspectFit" class="logo" src="../../static/images/member/index-hlf-icon6.png" ></image>
 				<text>站内短信</text>
 			</view>
