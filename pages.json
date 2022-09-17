@@ -122,6 +122,54 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "站内信",
+				"navigationBarBackgroundColor": "#28759382",
+				"navigationBarTextStyle": "#ffffff"
+			}
+		},
+		{
+            "path" : "pages/gainRecored/gainRecored",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "收益记录",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        }
+        ,{
+            "path" : "pages/InvestRecord/InvestRecord",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "投资记录",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+        }
+        ,{
+            "path" : "pages/fundState/fundState",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "资金流水",
+                "navigationBarBackgroundColor": "#28759382",
+                "navigationBarTextStyle": "#ffffff"
+            }
+            
+        },
+		{
+		    "path" : "pages/rechargeRecored/rechargeRecored",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "充值记录",
+		        "navigationBarBackgroundColor": "#28759382",
+		        "navigationBarTextStyle": "#ffffff"
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/withdrawRecord/withdrawRecord",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "提现记录",
                 "navigationBarBackgroundColor": "#28759382",
                 "navigationBarTextStyle": "#ffffff"
             }
