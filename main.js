@@ -6,6 +6,13 @@ Vue.config.productionTip = false
 App.mpType = 'app'
 
 
+// 公共接口
+import { myRequest, BASE_URL } from './util/api.js'
+Vue.prototype.$myRuquest = myRequest
+
+Vue.prototype.$url = BASE_URL  //公共路径
+
+
 import uView from "uview-ui";
 Vue.use(uView);
 

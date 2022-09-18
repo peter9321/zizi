@@ -212,9 +212,18 @@ export default {
 		}
 	},
 	onLoad() {
-		   
-		},
+		this.initData()   
+	},
 	methods: {
+		initData(){
+			this.$myRuquest({
+				url: '/config',
+				method:'GET'
+			}).then(res => {
+				console.log(res)
+				console.log("99999res")
+			})
+		},
 		goPage(url){
 			console.log(666)
 			uni.navigateTo({
@@ -239,11 +248,6 @@ export default {
 				if(res.responseCode == '0000'){
 					this.moneyList = res.data
 				}
-			})
-		},
-		initData(){
-			HomeApi.getIndexData_Api({}).then(res => {
-				this.platformList = res.data
 			})
 		},
 		
